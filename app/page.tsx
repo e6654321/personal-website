@@ -16,7 +16,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-5xl font-bold mb-4">Hi, I'm Ram 👋</h2>
+          <h2 className="text-5xl font-bold mb-4">Hi, I&apos;m Ram 👋</h2>
           <p className="text-xl text-slate-600 dark:text-slate-400 mb-8">
             Full-stack developer specializing in React Native, Next.js, and Node.js.
             Building products that matter.
@@ -37,11 +37,11 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <h3 className="text-3xl font-bold mb-8">About Me</h3>
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
-            I'm a developer with experience building scalable applications using modern tech stacks.
+            I&apos;m a developer with experience building scalable applications using modern tech stacks.
             Currently working on React Native, Next.js, and Node.js projects.
           </p>
           <p className="text-lg text-slate-700 dark:text-slate-300">
-            When I'm not coding, you can find me playing badminton or tennis.
+            When I&apos;m not coding, you can find me playing badminton or tennis.
           </p>
         </div>
       </section>
