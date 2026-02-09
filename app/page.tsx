@@ -26,9 +26,10 @@ export default function Home() {
             <a href="#projects" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 inline-block">
               View My Work
             </a>
-            <a href="/resume.pdf" download className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 inline-block">
+            {/* TODO: Add resume.pdf to /public/ to enable download */}
+            {/* <a href="/resume.pdf" download className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 inline-block">
               Download Resume
-            </a>
+            </a> */}
             <a href="#contact" className="border border-slate-300 dark:border-slate-700 px-6 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-900 inline-block">
               Contact Me
             </a>
@@ -94,7 +95,8 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="pt-4">
+            {/* TODO: Add resume.pdf to /public/ to enable download */}
+            {/* <div className="pt-4">
               <a 
                 href="/resume.pdf" 
                 download 
@@ -105,7 +107,7 @@ export default function Home() {
                 </svg>
                 Download Full Resume (PDF)
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
