@@ -116,6 +116,22 @@ export default function Home() {
               </a>
             </div>
 
+            {/* AI/ML Platform (NDA) */}
+            <div className="border border-slate-200 dark:border-slate-800 rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h4 className="text-xl font-bold mb-2">AI/ML Platform</h4>
+              <p className="text-slate-600 dark:text-slate-400 mb-4">
+                Enterprise AI platform integrating OpenAI API and LangChain for intelligent document processing
+                and data visualization. Led POC development and architecture.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">React</span>
+                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">TypeScript</span>
+                <span className="text-xs bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded">OpenAI API</span>
+                <span className="text-xs bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded">LangChain</span>
+                <span className="text-xs bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 px-2 py-1 rounded">Firebase</span>
+              </div>
+            </div>
+
             {/* M Lhuillier */}
             <div className="border border-slate-200 dark:border-slate-800 rounded-lg p-6 hover:shadow-lg transition-shadow">
               <h4 className="text-xl font-bold mb-2">M Lhuillier Website</h4>
@@ -152,6 +168,22 @@ export default function Home() {
               </a>
             </div>
 
+            {/* Mwell MPH */}
+            <div className="border border-slate-200 dark:border-slate-800 rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h4 className="text-xl font-bold mb-2">Mwell Healthcare Platform</h4>
+              <p className="text-slate-600 dark:text-slate-400 mb-4">
+                Healthcare management system built with Nx monorepo architecture. Full-stack development
+                with Next.js frontend and NestJS backend.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">Next.js</span>
+                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">NestJS</span>
+                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">TypeScript</span>
+                <span className="text-xs bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 px-2 py-1 rounded">Nx</span>
+                <span className="text-xs bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded">MySQL</span>
+              </div>
+            </div>
+
             {/* Stanible */}
             <div className="border border-slate-200 dark:border-slate-800 rounded-lg p-6 hover:shadow-lg transition-shadow">
               <h4 className="text-xl font-bold mb-2">Stanible</h4>
@@ -165,6 +197,36 @@ export default function Home() {
                 <span className="text-xs bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded">Go-Ethereum</span>
                 <span className="text-xs bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 px-2 py-1 rounded">Firebase</span>
                 <span className="text-xs bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 px-2 py-1 rounded">GCloud</span>
+              </div>
+            </div>
+
+            {/* Fiscal Admin */}
+            <div className="border border-slate-200 dark:border-slate-800 rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h4 className="text-xl font-bold mb-2">Fiscal Admin</h4>
+              <p className="text-slate-600 dark:text-slate-400 mb-4">
+                Task risk management system with i18n support. Built frontend and deployment pipeline
+                on Google Cloud Platform.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">React</span>
+                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">TypeScript</span>
+                <span className="text-xs bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 px-2 py-1 rounded">GCP</span>
+                <span className="text-xs bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 px-2 py-1 rounded">Material UI</span>
+              </div>
+            </div>
+
+            {/* Castille Resources */}
+            <div className="border border-slate-200 dark:border-slate-800 rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h4 className="text-xl font-bold mb-2">Castille Resources</h4>
+              <p className="text-slate-600 dark:text-slate-400 mb-4">
+                Real estate development platform with full-stack implementation. Built frontend and backend
+                with modern React architecture.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">React</span>
+                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">TypeScript</span>
+                <span className="text-xs bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 px-2 py-1 rounded">GCP</span>
+                <span className="text-xs bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 px-2 py-1 rounded">Ant Design</span>
               </div>
             </div>
 
@@ -202,11 +264,12 @@ export default function Home() {
                   <h4 className="text-xl font-semibold">Full-Stack Developer</h4>
                   <p className="text-blue-600">Symph</p>
                 </div>
-                <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-right">2020 - 2022</p>
+                <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-right">2020 - Present</p>
               </div>
               <ul className="text-slate-700 dark:text-slate-300 space-y-2 list-disc list-inside">
                 <li>Led development of multiple large-scale web applications</li>
-                <li>Built React Native mobile apps with Firebase backend</li>
+                <li>Built AI/ML platforms with OpenAI API and LangChain integration</li>
+                <li>Developed React Native mobile apps with Firebase backend</li>
                 <li>Architected and deployed solutions on GCP and AWS</li>
                 <li>Mentored junior developers and conducted code reviews</li>
               </ul>
