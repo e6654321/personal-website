@@ -5,34 +5,34 @@ import { Badge } from '@/components/ui/badge'
 export default function MobileAppsSection() {
   const apps = [
     {
-      name: 'Ray Media',
-      description: 'Camera app with 10k+ potential users',
-      screenshot: 'https://via.placeholder.com/280x570/1a1a2e/00D4AA?text=Ray+Media',
-      color: '#FF6B6B'
-    },
-    {
       name: 'RentCircle',
       description: 'Tenant management platform',
-      screenshot: 'https://via.placeholder.com/280x570/1a1a2e/00D4AA?text=RentCircle',
-      color: '#4ECDC4'
+      screenshot: 'https://placehold.co/280x570/1a1a2e/3B82F6?text=RentCircle&font=roboto',
+      frameColor: '#5F5F5F' // Space gray
     },
     {
-      name: 'MCash/ML Money',
+      name: 'MCash',
       description: 'M Lhuillier digital wallet',
-      screenshot: 'https://via.placeholder.com/280x570/1a1a2e/00D4AA?text=MCash',
-      color: '#45B7D1'
+      screenshot: 'https://placehold.co/280x570/1a1a2e/3B82F6?text=MCash&font=roboto',
+      frameColor: '#4A4A4A' // Dark gray
     },
     {
-      name: 'mWell Health ID',
+      name: 'Ray Media',
+      description: 'Camera app with 10k+ potential users',
+      screenshot: 'https://placehold.co/280x570/1a1a2e/3B82F6?text=Ray+Media&font=roboto',
+      frameColor: '#3A3A3A' // Center - darkest
+    },
+    {
+      name: 'mWell',
       description: 'Digital health identification',
-      screenshot: 'https://via.placeholder.com/280x570/1a1a2e/00D4AA?text=mWell',
-      color: '#96CEB4'
+      screenshot: 'https://placehold.co/280x570/1a1a2e/3B82F6?text=mWell&font=roboto',
+      frameColor: '#4A4A4A' // Dark gray
     },
     {
       name: 'Kindred',
       description: 'AI storytelling startup kit',
-      screenshot: 'https://via.placeholder.com/280x570/1a1a2e/00D4AA?text=Kindred',
-      color: '#9B59B6'
+      screenshot: 'https://placehold.co/280x570/1a1a2e/3B82F6?text=Kindred&font=roboto',
+      frameColor: '#8B7355' // Rose gold
     }
   ]
 
@@ -40,74 +40,66 @@ export default function MobileAppsSection() {
     <section id="mobile-apps" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
+          <Badge className="mb-4 bg-[#3B82F6]/10 text-[#3B82F6] border-[#3B82F6]/20">
             Mobile Development
           </Badge>
           <h2 className="mb-4">Mobile Applications</h2>
-          <p className="text-white/60 text-lg max-w-2xl mx-auto">
-            5 production apps shipped to App Store & Google Play
+          <p className="text-[#94A3B8] text-lg max-w-2xl mx-auto">
+            2+ years React Native • 5 production apps
           </p>
         </div>
 
-        {/* Phone Frames Carousel/Fan Layout */}
-        <div className="relative flex justify-center items-center gap-4 flex-wrap lg:flex-nowrap py-12">
-          {apps.map((app, index) => {
-            // Create fan effect - center phone is larger, side phones are smaller and tilted
-            const isCenter = index === 2
-            const offset = index - 2 // -2, -1, 0, 1, 2
-            
-            const scale = isCenter ? 1 : 0.85 - Math.abs(offset) * 0.05
-            const rotateY = offset * -8
-            const translateX = offset * (isCenter ? 0 : 20)
-            const zIndex = 5 - Math.abs(offset)
+        {/* 3D Phone Carousel - Center phone largest, sides rotated inward */}
+        <div className="relative perspective-container min-h-[650px] flex items-center justify-center">
+          <div className="relative flex justify-center items-center gap-0">
+            {apps.map((app, index) => {
+              const isCenter = index === 2 // Ray Media in center
+              const offset = index - 2 // -2, -1, 0, 1, 2
+              
+              // 3D perspective calculations
+              const scale = isCenter ? 1 : 0.85 - Math.abs(offset) * 0.1
+              const rotateY = offset * -12 // More pronounced rotation
+              const translateX = offset * 50 // Spacing between phones
+              const translateZ = isCenter ? 0 : -100 - Math.abs(offset) * 50
+              const zIndex = 10 - Math.abs(offset)
 
-            return (
-              <div
-                key={index}
-                className="phone-frame"
-                style={{
-                  transform: `
-                    perspective(1500px) 
-                    rotateY(${rotateY}deg) 
-                    scale(${scale}) 
-                    translateX(${translateX}px)
-                  `,
-                  zIndex,
-                  transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)'
-                }}
-              >
-                <img
-                  src={app.screenshot}
-                  alt={app.name}
-                  className="phone-frame-screen"
-                />
-                
-                {/* App Info Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                  <p className="text-white font-semibold text-sm">{app.name}</p>
-                  <p className="text-white/60 text-xs">{app.description}</p>
+              return (
+                <div
+                  key={index}
+                  className="phone-frame absolute"
+                  style={{
+                    transform: `
+                      perspective(1500px) 
+                      rotateY(${rotateY}deg) 
+                      scale(${scale}) 
+                      translateX(${translateX}px)
+                      translateZ(${translateZ}px)
+                    `,
+                    zIndex,
+                    borderColor: app.frameColor,
+                    transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
+                    opacity: isCenter ? 1 : 0.7
+                  }}
+                >
+                  <img
+                    src={app.screenshot}
+                    alt={app.name}
+                    className="phone-frame-screen"
+                  />
+                  
+                  {/* App Info Overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent">
+                    <p className="text-white font-semibold text-sm">{app.name}</p>
+                    <p className="text-white/70 text-xs">{app.description}</p>
+                  </div>
                 </div>
-              </div>
-            )
-          })}
-        </div>
-
-        {/* Pagination Dots */}
-        <div className="flex justify-center gap-2 mt-8">
-          {apps.map((_, index) => (
-            <div
-              key={index}
-              className={`w-2 h-2 rounded-full transition-all ${
-                index === 2 
-                  ? 'bg-[#00D4AA] w-6' 
-                  : 'bg-white/30'
-              }`}
-            />
-          ))}
+              )
+            })}
+          </div>
         </div>
 
         {/* Tech Stack */}
-        <div className="mt-12 text-center">
+        <div className="mt-16 text-center">
           <p className="text-white/50 text-sm mb-3">Built with:</p>
           <div className="flex flex-wrap gap-2 justify-center">
             {['React Native', 'TypeScript', 'Firebase', 'Redux', 'Native Modules', 'iOS', 'Android'].map((tech) => (

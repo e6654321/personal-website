@@ -28,11 +28,11 @@ export default function TechStackSection() {
     <section id="tech-stack" className="py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-orange-500/10 text-orange-400 border-orange-500/20">
+          <Badge className="mb-4 bg-[#3B82F6]/10 text-[#3B82F6] border-[#3B82F6]/20">
             Technical Skills
           </Badge>
           <h2 className="mb-4">Tech Stack</h2>
-          <p className="text-white/60 text-lg max-w-2xl mx-auto">
+          <p className="text-[#94A3B8] text-lg max-w-2xl mx-auto">
             Expertise across the full development stack
           </p>
         </div>
@@ -48,7 +48,7 @@ export default function TechStackSection() {
                   <Badge
                     key={tech}
                     variant="outline"
-                    className="bg-white/5 border-white/10 text-white/80 hover:bg-white/10 hover:border-[#00D4AA]/30 transition-all"
+                    className="bg-white/5 border-white/10 text-white/80 hover:bg-white/10 hover:border-[#3B82F6]/30 transition-all"
                   >
                     {tech}
                   </Badge>
