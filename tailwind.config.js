@@ -21,6 +21,13 @@ module.exports = {
       backdropBlur: {
         'glass': '20px',
       },
+      perspective: {
+        '500': '500px',
+        '1000': '1000px',
+        '1500': '1500px',
+        '2000': '2000px',
+        '3000': '3000px',
+      },
     },
   },
   plugins: [],
