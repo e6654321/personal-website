@@ -5,29 +5,29 @@ import { Iphone15Pro } from '@/components/ui/iphone-15-pro'
 
 const apps = [
   {
-    name: 'Ray Media',
-    description: 'Camera app · 10k+ users · TestFlight + Play Store',
-    screenshot: 'https://placehold.co/390x844/1a0a2e/A78BFA?text=Ray+Media+Camera+App&font=roboto',
+    name: 'Truest',
+    description: 'Snap, Secure, Share · Camera app · 10k+ users',
+    screenshot: 'https://placehold.co/390x844/4A5FE8/ffffff?text=Truest+Photo+Sharing&font=roboto',
   },
   {
     name: 'RentCircle',
     description: 'PH Landlord & Tenant Management',
-    screenshot: 'https://placehold.co/390x844/0f172a/3B82F6?text=RentCircle+Property+Mgmt&font=roboto',
+    screenshot: 'https://placehold.co/390x844/4CAF50/ffffff?text=RentCircle+Landlord&font=roboto',
   },
   {
     name: 'MCash Wallet',
     description: 'M Lhuillier Digital Wallet',
-    screenshot: 'https://placehold.co/390x844/8b0000/FFD700?text=MCash+M+Lhuillier&font=roboto',
+    screenshot: 'https://placehold.co/390x844/E31E24/ffffff?text=MCash+M+Lhuillier&font=roboto',
   },
   {
     name: 'mWell Health ID',
-    description: 'Digital Health Records Platform',
-    screenshot: 'https://placehold.co/390x844/064e3b/10b981?text=mWell+Health+ID&font=roboto',
+    description: 'Digital Health Records · 24/7 Doctor Consult',
+    screenshot: 'https://placehold.co/390x844/00A9CE/ffffff?text=mWell+Health+PH&font=roboto',
   },
   {
     name: 'PAO Connect',
     description: 'Philippine Academy of Ophthalmology',
-    screenshot: 'https://placehold.co/390x844/1e3a8a/60A5FA?text=PAO+Connect&font=roboto',
+    screenshot: 'https://placehold.co/390x844/1565C0/ffffff?text=PAO+Connect&font=roboto',
   },
 ]
 
