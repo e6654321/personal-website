@@ -7,32 +7,27 @@ const apps = [
   {
     name: 'Ray Media',
     description: 'Camera app · 10k+ users · TestFlight + Play Store',
-    color: '#0a0a1a',
-    screenshot: 'https://placehold.co/390x844/0a0a1a/A78BFA?text=Ray+Media+Camera',
+    screenshot: 'https://placehold.co/390x844/1a0a2e/A78BFA?text=Ray+Media+Camera+App&font=roboto',
   },
   {
     name: 'RentCircle',
-    description: 'Tenant management platform',
-    color: '#0f172a',
-    screenshot: 'https://placehold.co/390x844/0f172a/3B82F6?text=RentCircle',
+    description: 'PH Landlord & Tenant Management',
+    screenshot: 'https://placehold.co/390x844/0f172a/3B82F6?text=RentCircle+Property+Mgmt&font=roboto',
   },
   {
-    name: 'MCash',
-    description: 'M Lhuillier digital wallet',
-    color: '#8b0000',
-    screenshot: 'https://placehold.co/390x844/8b0000/FFD700?text=MCash+Wallet',
+    name: 'MCash Wallet',
+    description: 'M Lhuillier Digital Wallet',
+    screenshot: 'https://placehold.co/390x844/8b0000/FFD700?text=MCash+M+Lhuillier&font=roboto',
   },
   {
     name: 'mWell Health ID',
-    description: 'Digital health identification',
-    color: '#062116',
-    screenshot: 'https://placehold.co/390x844/062116/34D399?text=mWell+Health',
+    description: 'Digital Health Records Platform',
+    screenshot: 'https://placehold.co/390x844/064e3b/10b981?text=mWell+Health+ID&font=roboto',
   },
   {
     name: 'PAO Connect',
     description: 'Philippine Academy of Ophthalmology',
-    color: '#1e3a8a',
-    screenshot: 'https://placehold.co/390x844/1e3a8a/60A5FA?text=PAO+Connect',
+    screenshot: 'https://placehold.co/390x844/1e3a8a/60A5FA?text=PAO+Connect&font=roboto',
   },
 ]
 

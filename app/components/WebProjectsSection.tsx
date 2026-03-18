@@ -19,6 +19,13 @@ const projects = [
     tags: ['React', 'Web3.js', 'AWS', 'PDFTron'],
   },
   {
+    title: 'Watch My Back',
+    url: 'watchmyback.org',
+    screenshot: 'https://placehold.co/1200x700/064e3b/10b981?text=Watch+My+Back+Community+Safety&font=roboto',
+    description: 'Community incident reporting platform · Real-time safety tracking',
+    tags: ['React', 'Firebase', 'Next.js', 'TypeScript'],
+  },
+  {
     title: 'M Lhuillier Website',
     url: 'mlhuillier.com',
     screenshot: '/screenshots/mlhuillier.jpg',
@@ -26,11 +33,18 @@ const projects = [
     tags: ['11ty', 'jQuery', 'Contentful', 'Netlify'],
   },
   {
-    title: 'MPIC Sustainability Platform',
+    title: 'MPIC Sustainability',
     url: 'sustainability.mpic.com.ph',
     screenshot: '/screenshots/mpic-sustainability.png',
     description: 'Enterprise sustainability tracking and reporting for MPIC subsidiaries',
     tags: ['React', 'TypeScript', 'Data Viz'],
+  },
+  {
+    title: 'UNITS Property Management',
+    url: 'unitsapp.co',
+    screenshot: 'https://placehold.co/1200x700/1e3a8a/60A5FA?text=UNITS+Property+SaaS&font=roboto',
+    description: 'Lead development · Property management SaaS platform',
+    tags: ['React', 'Python', 'Node.js', 'Redux'],
   },
 ]
 
@@ -53,7 +67,7 @@ export default function WebProjectsSection() {
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Full-Stack & Web Projects</h2>
           <p className="text-[#94A3B8] text-lg max-w-2xl mx-auto">
-            Blockchain · Enterprise · Fintech · Healthcare platforms
+            Blockchain · Enterprise · Fintech · Healthcare · Community Safety
           </p>
         </div>
 
