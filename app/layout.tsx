@@ -1,9 +1,10 @@
-import type { Metadata } from 'next'
 import './globals.css'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Elram Espra | Full Stack Developer',
-  description: 'Full Stack Developer & Product Builder. Crafting scalable web applications and AI-powered solutions. Specializing in React, Node.js, and cloud infrastructure.',
+  title: 'Ram Elram - Full Stack Developer',
+  description: 'Personal portfolio of Ram Elram, a full-stack developer specializing in React Native, Node.js, and modern web technologies.',
+  keywords: 'developer, portfolio, react native, nextjs, node.js',
 }
 
 export default function RootLayout({
@@ -12,8 +13,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="font-sans antialiased">{children}</body>
+    <html lang="en">
+      <body className="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50">
+        {children}
+      </body>
     </html>
   )
 }
+
