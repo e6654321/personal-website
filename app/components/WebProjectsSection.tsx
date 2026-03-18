@@ -7,30 +7,30 @@ const projects = [
   {
     title: 'TokenTable',
     url: 'tokentable.xyz',
-    screenshot: 'https://placehold.co/1200x700/0f172a/3B82F6?text=TokenTable+Vesting+Platform',
+    screenshot: '/screenshots/tokentable.jpg',
     description: 'Lead smart contract developer · Token vesting platform managing $50M+ in assets',
     tags: ['Solidity', 'React', 'Web3.js', 'TypeScript'],
   },
   {
-    title: 'AI/ML Platform',
-    url: 'symph.co',
-    screenshot: 'https://placehold.co/1200x700/1a103d/A78BFA?text=AI+Document+Processing',
-    description: 'Enterprise AI platform · OpenAI API integration · LangChain · Document intelligence',
-    tags: ['React', 'OpenAI', 'LangChain', 'Python'],
+    title: 'EthSign Platform',
+    url: 'ethsign.xyz',
+    screenshot: '/screenshots/ethsign.jpg',
+    description: 'Web3 electronic signature platform · Blockchain transaction handling',
+    tags: ['React', 'Web3.js', 'AWS', 'PDFTron'],
   },
   {
-    title: 'M Lhuillier Platform',
+    title: 'M Lhuillier Website',
     url: 'mlhuillier.com',
-    screenshot: 'https://placehold.co/1200x700/1a0a00/FCD34D?text=M+Lhuillier+Services',
-    description: 'National remittance & financial services · 10,000+ daily users',
+    screenshot: '/screenshots/mlhuillier.jpg',
+    description: 'Lead developer · National remittance & financial services · 10,000+ daily users',
     tags: ['11ty', 'jQuery', 'Contentful', 'Netlify'],
   },
   {
-    title: 'Property Management',
-    url: 'propertymanagement.app',
-    screenshot: 'https://placehold.co/1200x700/0d1a28/60A5FA?text=Property+Management',
-    description: 'Real estate platform · Tenant management · Lease tracking',
-    tags: ['Next.js', 'TypeScript', 'PostgreSQL'],
+    title: 'MPIC Sustainability Platform',
+    url: 'sustainability.mpic.com.ph',
+    screenshot: '/screenshots/mpic-sustainability.png',
+    description: 'Enterprise sustainability tracking and reporting for MPIC subsidiaries',
+    tags: ['React', 'TypeScript', 'Data Viz'],
   },
 ]
 
@@ -53,7 +53,7 @@ export default function WebProjectsSection() {
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Full-Stack & Web Projects</h2>
           <p className="text-[#94A3B8] text-lg max-w-2xl mx-auto">
-            Blockchain · AI · Fintech · Enterprise platforms
+            Blockchain · Enterprise · Fintech · Healthcare platforms
           </p>
         </div>
 
