@@ -21,7 +21,7 @@ const projects = [
   {
     title: 'Watch My Back',
     url: 'watchmyback.org',
-    screenshot: 'https://placehold.co/1200x700/064e3b/10b981?text=Watch+My+Back+Community+Safety&font=roboto',
+    screenshot: '/screenshots/watchmyback.png',
     description: 'Community incident reporting platform · Real-time safety tracking',
     tags: ['React', 'Firebase', 'Next.js', 'TypeScript'],
   },
