@@ -5,34 +5,34 @@ import { Iphone15Pro } from '@/components/ui/iphone-15-pro'
 
 const apps = [
   {
-    name: 'DiTA',
-    description: 'Healthcare records platform',
-    color: '#1e40af',
-    screenshot: 'https://placehold.co/390x844/1e40af/ffffff?text=DiTA+Health',
+    name: 'Ray Media',
+    description: 'Camera app · 10k+ users · TestFlight + Play Store',
+    color: '#0a0a1a',
+    screenshot: 'https://placehold.co/390x844/0a0a1a/A78BFA?text=Ray+Media+Camera',
   },
   {
-    name: 'AMIA',
-    description: 'Medical appointment system',
-    color: '#0891b2',
-    screenshot: 'https://placehold.co/390x844/0891b2/ffffff?text=AMIA+Medical',
+    name: 'RentCircle',
+    description: 'Tenant management platform',
+    color: '#0f172a',
+    screenshot: 'https://placehold.co/390x844/0f172a/3B82F6?text=RentCircle',
   },
   {
-    name: 'CovidTrace',
-    description: 'Contact tracing app',
-    color: '#059669',
-    screenshot: 'https://placehold.co/390x844/059669/ffffff?text=CovidTrace',
+    name: 'MCash',
+    description: 'M Lhuillier digital wallet',
+    color: '#8b0000',
+    screenshot: 'https://placehold.co/390x844/8b0000/FFD700?text=MCash+Wallet',
   },
   {
-    name: 'MoveMateMOVEMENT',
-    description: 'Fitness tracking platform',
-    color: '#dc2626',
-    screenshot: 'https://placehold.co/390x844/dc2626/ffffff?text=MoveMate',
+    name: 'mWell Health ID',
+    description: 'Digital health identification',
+    color: '#062116',
+    screenshot: 'https://placehold.co/390x844/062116/34D399?text=mWell+Health',
   },
   {
-    name: 'DLSU Green Archers',
-    description: 'Sports team fan app',
-    color: '#15803d',
-    screenshot: 'https://placehold.co/390x844/15803d/ffffff?text=Green+Archers',
+    name: 'PAO Connect',
+    description: 'Philippine Academy of Ophthalmology',
+    color: '#1e3a8a',
+    screenshot: 'https://placehold.co/390x844/1e3a8a/60A5FA?text=PAO+Connect',
   },
 ]
 
@@ -55,7 +55,7 @@ export default function MobileAppsSection() {
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Mobile Applications</h2>
           <p className="text-[#94A3B8] text-lg max-w-2xl mx-auto">
-            5 production apps · React Native · iOS & Android
+            5 production apps · React Native · iOS & Android · 10k+ users
           </p>
         </div>
 
@@ -102,7 +102,7 @@ export default function MobileAppsSection() {
         <div className="mt-16 text-center">
           <p className="text-white/40 text-xs mb-4 uppercase tracking-widest">Tech Stack</p>
           <div className="flex flex-wrap gap-2 justify-center max-w-2xl mx-auto">
-            {['React Native', 'TypeScript', 'Firebase', 'GraphQL', 'Redux', 'iOS', 'Android', 'Expo'].map(
+            {['React Native', 'TypeScript', 'Firebase', 'Sentry', 'Fastlane', 'iOS', 'Android', 'TestFlight'].map(
               (tech) => (
                 <Badge
                   key={tech}
