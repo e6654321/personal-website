@@ -1,17 +1,11 @@
 {
   "name": "personal-website",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "NEXT_TURBOPACK=0 next build",
+    "start": "next start"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
     "@types/node": "^25.2.3",
