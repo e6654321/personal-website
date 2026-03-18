@@ -2,120 +2,144 @@
 
 import { motion } from 'framer-motion';
 
+const stats = [
+  { label: '6+ Years', sub: 'Experience' },
+  { label: '5 Apps', sub: 'React Native' },
+  { label: '3 Years', sub: 'Blockchain' },
+  { label: 'Full-Stack', sub: 'Development' },
+]
+
 export default function Hero() {
-  const fadeInUp = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.5 }
-  };
-
   return (
-    <section className="pt-40 pb-28 px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center">
-          {/* Available badge */}
-          <motion.div
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-600/10 to-purple-600/10 border border-blue-600/20 dark:border-purple-600/20 mb-8"
-            style={{ opacity: 0, transform: 'scale(0.9)' }}
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-            <span className="text-sm font-medium bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Available for opportunities
+    <section className="pt-40 pb-32 px-6 relative overflow-hidden">
+      {/* Radial glow background */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            'radial-gradient(ellipse 60% 50% at 50% 0%, rgba(59,130,246,0.12) 0%, transparent 70%)',
+        }}
+      />
+      {/* Subtle grid lines */}
+      <div
+        className="absolute inset-0 pointer-events-none opacity-[0.03]"
+        style={{
+          backgroundImage:
+            'linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px)',
+          backgroundSize: '60px 60px',
+        }}
+      />
+
+      <div className="max-w-5xl mx-auto text-center relative z-10">
+        {/* Available badge */}
+        <motion.div
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-10"
+          style={{
+            background: 'rgba(34,197,94,0.08)',
+            border: '1px solid rgba(34,197,94,0.25)',
+          }}
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
+          <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse inline-block" />
+          <span className="text-green-400 text-sm font-medium">Available for opportunities</span>
+        </motion.div>
+
+        {/* Main heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 leading-tight tracking-tight">
+            Elram Espra
+          </h1>
+          <h2 className="text-2xl md:text-4xl font-bold mb-8 leading-snug">
+            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              Senior Full-Stack
             </span>
-          </motion.div>
-
-          {/* Main heading */}
-          <motion.h1
-            className="text-6xl md:text-8xl font-bold mb-8 leading-tight"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
-            Building digital
-            <br />
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              experiences
+            {' & '}
+            <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+              Blockchain Developer
             </span>
-          </motion.h1>
+          </h2>
+        </motion.div>
 
-          {/* Subtitle */}
-          <motion.p
-            className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 mb-6 max-w-3xl mx-auto leading-relaxed"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            Full-Stack Developer specializing in{' '}
-            <span className="text-blue-600 dark:text-blue-400 font-semibold">blockchain</span>,{' '}
-            <span className="text-purple-600 dark:text-purple-400 font-semibold">AI platforms</span>, and{' '}
-            <span className="text-pink-600 dark:text-pink-400 font-semibold">scalable web applications</span>
-          </motion.p>
+        {/* Subtitle */}
+        <motion.p
+          className="text-lg md:text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.35 }}
+        >
+          Building scalable web platforms, shipping React Native apps to production,
+          and architecting blockchain smart contracts.
+        </motion.p>
 
-          {/* Tech stack */}
-          <motion.p
-            className="text-lg text-slate-500 dark:text-slate-500 mb-10"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+        {/* CTA buttons */}
+        <motion.div
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-20"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+        >
+          <a
+            href="#blockchain"
+            className="px-8 py-4 rounded-full text-white font-semibold text-base flex items-center gap-2 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/30"
+            style={{
+              background: 'linear-gradient(135deg, #3b82f6, #8b5cf6)',
+            }}
           >
-            React · React Native · Next.js · TypeScript · Node.js · Blockchain
-          </motion.p>
-
-          {/* CTA buttons */}
-          <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
-            <a
-              href="#blockchain"
-              className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:shadow-2xl hover:shadow-blue-500/50 hover:scale-105 transition-all text-lg font-semibold flex items-center gap-2"
-            >
-              View My Work
-              <svg
-                className="w-5 h-5 group-hover:translate-x-1 transition-transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
-              </svg>
-            </a>
-            <a
-              href="#contact"
-              className="px-8 py-4 border-2 border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 hover:border-blue-600 dark:hover:border-blue-500 transition-all text-lg font-semibold"
-            >
-              Get in Touch
-            </a>
-          </motion.div>
-
-          {/* Scroll indicator */}
-          <motion.div
-            className="mt-20 flex flex-col items-center gap-2 text-slate-400"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-          >
-            <span className="text-sm font-medium">Scroll to explore</span>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 14l-7 7m0 0l-7-7m7 7V3"
-              />
+            View My Work
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5-5 5M6 12h12" />
             </svg>
-          </motion.div>
-        </div>
+          </a>
+          <a
+            href="#contact"
+            className="px-8 py-4 rounded-full font-semibold text-base text-slate-300 transition-all hover:text-white hover:border-blue-500/50"
+            style={{
+              border: '1px solid rgba(255,255,255,0.15)',
+              background: 'rgba(255,255,255,0.04)',
+            }}
+          >
+            Get in Touch
+          </a>
+        </motion.div>
+
+        {/* Stats row */}
+        <motion.div
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.65 }}
+        >
+          {stats.map((stat, i) => (
+            <div
+              key={i}
+              className="flex flex-col items-center py-4 px-3 rounded-2xl"
+              style={{
+                background: 'rgba(255,255,255,0.04)',
+                border: '1px solid rgba(255,255,255,0.08)',
+              }}
+            >
+              <span className="text-xl font-bold text-white">{stat.label}</span>
+              <span className="text-xs text-slate-500 mt-1">{stat.sub}</span>
+            </div>
+          ))}
+        </motion.div>
+
+        {/* Scroll hint */}
+        <motion.div
+          className="mt-16 flex flex-col items-center gap-2 text-slate-600"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1 }}
+        >
+          <span className="text-xs uppercase tracking-widest">Scroll to explore</span>
+          <div className="w-px h-8 bg-gradient-to-b from-slate-600 to-transparent" />
+        </motion.div>
       </div>
     </section>
   );
