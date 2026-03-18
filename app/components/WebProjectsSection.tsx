@@ -7,14 +7,14 @@ const projects = [
   {
     title: 'TokenTable',
     url: 'tokentable.xyz',
-    screenshot: '/screenshots/tokentable.jpg',
+    screenshot: '/screenshots/tokentable-desktop.jpg',
     description: 'Lead smart contract developer · Token vesting platform managing $50M+ in assets',
     tags: ['Solidity', 'React', 'Web3.js', 'TypeScript'],
   },
   {
     title: 'EthSign Platform',
     url: 'ethsign.xyz',
-    screenshot: '/screenshots/ethsign.jpg',
+    screenshot: '/screenshots/ethsign-desktop.jpg',
     description: 'Web3 electronic signature platform · Blockchain transaction handling',
     tags: ['React', 'Web3.js', 'AWS', 'PDFTron'],
   },
@@ -28,7 +28,7 @@ const projects = [
   {
     title: 'M Lhuillier Website',
     url: 'mlhuillier.com',
-    screenshot: '/screenshots/mlhuillier.jpg',
+    screenshot: '/screenshots/mlhuillier-desktop.jpg',
     description: 'Lead developer · National remittance & financial services · 10,000+ daily users',
     tags: ['11ty', 'jQuery', 'Contentful', 'Netlify'],
   },
