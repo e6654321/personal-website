@@ -124,3 +124,8 @@
 .perspective-container {
   perspective: 1500px;
 }
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
