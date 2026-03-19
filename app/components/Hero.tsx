@@ -117,7 +117,7 @@ export default function Hero() {
           {stats.map((stat, i) => (
             <motion.div
               key={i}
-              className="flex flex-col items-center py-4 px-3 rounded-2xl cursor-default"
+              className="flex flex-col items-center py-4 px-3 rounded-2xl cursor-default transition-all duration-200 ease-out hover:scale-110 hover:-translate-y-1 hover:bg-blue-500/10 hover:border-blue-500/30"
               style={{
                 background: 'rgba(255,255,255,0.04)',
                 border: '1px solid rgba(255,255,255,0.08)',
@@ -125,12 +125,6 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.7 + i * 0.1 }}
-              whileHover={{ 
-                scale: 1.08, 
-                y: -5,
-                background: 'rgba(59,130,246,0.1)',
-                borderColor: 'rgba(59,130,246,0.3)'
-              }}
             >
               <span className="text-xl font-bold text-white">{stat.label}</span>
               <span className="text-xs text-slate-500 mt-1">{stat.sub}</span>
