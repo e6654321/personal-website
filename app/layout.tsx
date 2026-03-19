@@ -2,9 +2,9 @@ import './globals.css'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Ram Elram - Full Stack Developer',
-  description: 'Personal portfolio of Ram Elram, a full-stack developer specializing in React Native, Node.js, and modern web technologies.',
-  keywords: 'developer, portfolio, react native, nextjs, node.js',
+  title: 'Elram Espra - Full-Stack & Blockchain Developer',
+  description: 'Personal portfolio of Elram Espra, a senior full-stack and blockchain developer specializing in React Native, Solidity, and modern web technologies.',
+  keywords: 'developer, portfolio, react native, nextjs, node.js, blockchain, solidity, web3',
 }
 
 export default function RootLayout({
