@@ -1,22 +1,28 @@
 'use client'
 
 import { Badge } from '@/components/ui/badge'
-import { Safari } from '@/components/ui/safari'
 
 const projects = [
   {
     title: 'TokenTable',
     url: 'tokentable.xyz',
-    screenshot: '/screenshots/web_tokentable.png',
+    screenshot: '/screenshots/tokentable-real.jpg',
     description: 'Lead smart contract developer · Token vesting platform managing $50M+ in assets',
     tags: ['Solidity', 'React', 'Web3.js', 'TypeScript'],
   },
   {
     title: 'EthSign Platform',
     url: 'ethsign.xyz',
-    screenshot: '/screenshots/web_ethsign.png',
+    screenshot: '/screenshots/ethsign-real.jpg',
     description: 'Web3 electronic signature platform · Blockchain transaction handling',
     tags: ['React', 'Web3.js', 'AWS', 'PDFTron'],
+  },
+  {
+    title: 'M Lhuillier Website',
+    url: 'mlhuillier.com',
+    screenshot: '/screenshots/mlhuillier-real.jpg',
+    description: 'Lead developer · National remittance & financial services · 10,000+ daily users',
+    tags: ['11ty', 'jQuery', 'Contentful', 'Netlify'],
   },
   {
     title: 'Watch My Back',
@@ -26,25 +32,11 @@ const projects = [
     tags: ['React', 'Firebase', 'Next.js', 'TypeScript'],
   },
   {
-    title: 'M Lhuillier Website',
-    url: 'mlhuillier.com',
-    screenshot: '/screenshots/web_mlhuillier.png',
-    description: 'Lead developer · National remittance & financial services · 10,000+ daily users',
-    tags: ['11ty', 'jQuery', 'Contentful', 'Netlify'],
-  },
-  {
     title: 'MPIC Sustainability',
     url: 'sustainability.mpic.com.ph',
     screenshot: '/screenshots/mpic-sustainability.png',
     description: 'Enterprise sustainability tracking and reporting for MPIC subsidiaries',
     tags: ['React', 'TypeScript', 'Data Viz'],
-  },
-  {
-    title: 'UNITS Property Management',
-    url: 'unitsapp.co',
-    screenshot: 'https://placehold.co/1200x700/1e3a8a/60A5FA?text=UNITS+Property+SaaS&font=roboto',
-    description: 'Lead development · Property management SaaS platform',
-    tags: ['React', 'Python', 'Node.js', 'Redux'],
   },
 ]
 
@@ -71,21 +63,33 @@ export default function WebProjectsSection() {
           </p>
         </div>
 
-        {/* Safari browser frames - responsive grid */}
+        {/* Website Screenshots Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {projects.map((project, index) => (
             <div
               key={index}
               className="group hover:scale-[1.02] transition-all duration-300"
             >
-              {/* Safari component from 21st.dev */}
-              <div className="relative">
-                <Safari
-                  url={project.url}
-                  src={project.screenshot}
-                  width={1200}
-                  height={700}
-                  className="w-full h-auto drop-shadow-2xl"
+              {/* Browser-style frame */}
+              <div className="rounded-xl overflow-hidden border border-white/10 bg-[#1a1a1a]">
+                {/* Browser header */}
+                <div className="flex items-center gap-2 px-4 py-3 bg-[#2a2a2a] border-b border-white/10">
+                  <div className="flex gap-1.5">
+                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                  </div>
+                  <div className="flex-1 mx-4">
+                    <div className="bg-[#1a1a1a] rounded-md px-3 py-1 text-xs text-white/50">
+                      {project.url}
+                    </div>
+                  </div>
+                </div>
+                {/* Screenshot */}
+                <img 
+                  src={project.screenshot} 
+                  alt={`${project.title} website`}
+                  className="w-full h-auto"
                 />
               </div>
 

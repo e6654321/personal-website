@@ -1,33 +1,27 @@
 "use client"
 
 import { Badge } from '@/components/ui/badge'
-import { Iphone15Pro } from '@/components/ui/iphone-15-pro'
 
 const apps = [
   {
     name: 'Truest',
     description: 'Snap, Secure, Share · Camera app · 10k+ users',
-    screenshot: '/screenshots/mob_truest.png',
+    screenshot: '/screenshots/truest-appstore.jpg',
   },
   {
     name: 'RentCircle',
     description: 'PH Landlord & Tenant Management',
-    screenshot: '/screenshots/mob_rencircle.png',
+    screenshot: '/screenshots/rentcircle-appstore.jpg',
   },
   {
     name: 'MCash Wallet',
     description: 'M Lhuillier Digital Wallet',
-    screenshot: '/screenshots/mob_mcash.png',
+    screenshot: '/screenshots/mcash-appstore.jpg',
   },
   {
     name: 'mWell Health ID',
     description: 'Digital Health Records · 24/7 Doctor Consult',
-    screenshot: '/screenshots/mob_mwell.png',
-  },
-  {
-    name: 'PAO Connect',
-    description: 'Philippine Academy of Ophthalmology',
-    screenshot: '/screenshots/mob_paoconnect.png',
+    screenshot: '/screenshots/mwell-appstore.jpg',
   },
 ]
 
@@ -49,47 +43,33 @@ export default function MobileAppsSection() {
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Mobile Applications</h2>
           <p className="text-[#94A3B8] text-lg max-w-2xl mx-auto">
-            5 production apps · React Native · iOS & Android · 10k+ users
+            4 production apps · React Native · iOS & Android · 10k+ users
           </p>
         </div>
 
-        <div
-          className="relative overflow-x-auto pb-8 -mx-6 px-6 md:mx-0 md:px-0"
-          style={{
-            scrollSnapType: 'x mandatory',
-            scrollBehavior: 'smooth',
-            WebkitOverflowScrolling: 'touch',
-          }}
-        >
-          <div className="flex gap-8 min-w-max justify-start md:justify-center px-4">
-            {apps.map((app, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 flex flex-col items-center"
-                style={{ scrollSnapAlign: 'center' }}
-              >
-                <div className="drop-shadow-2xl hover:scale-105 transition-transform duration-300">
-                  <Iphone15Pro
-                    width={200}
-                    height={408}
-                    src={app.screenshot}
-                    className="cursor-pointer"
-                  />
-                </div>
-
-                <div className="text-center mt-6">
-                  <p className="text-white font-semibold text-base">{app.name}</p>
-                  <p className="text-white/60 text-sm mt-1">{app.description}</p>
-                </div>
+        {/* App Store Screenshots Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {apps.map((app, index) => (
+            <div
+              key={index}
+              className="group hover:scale-[1.02] transition-all duration-300"
+            >
+              <div className="rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm">
+                <img 
+                  src={app.screenshot} 
+                  alt={`${app.name} App Store`}
+                  className="w-full h-auto"
+                />
               </div>
-            ))}
-          </div>
+              <div className="text-center mt-4">
+                <p className="text-white font-semibold text-lg">{app.name}</p>
+                <p className="text-white/60 text-sm mt-1">{app.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
 
-        <div className="text-center mt-4 md:hidden">
-          <p className="text-white/40 text-xs">← Swipe to see more →</p>
-        </div>
-
+        {/* Tech Stack */}
         <div className="mt-16 text-center">
           <p className="text-white/40 text-xs mb-4 uppercase tracking-widest">Tech Stack</p>
           <div className="flex flex-wrap gap-2 justify-center max-w-2xl mx-auto">
