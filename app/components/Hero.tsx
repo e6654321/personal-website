@@ -84,61 +84,73 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
         >
-          <a
+          <motion.a
             href="#blockchain"
-            className="px-8 py-4 rounded-full text-white font-semibold text-base flex items-center gap-2 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/30"
+            className="px-8 py-4 rounded-full text-white font-semibold text-base flex items-center gap-2 transition-shadow hover:shadow-2xl hover:shadow-blue-500/30"
             style={{
               background: 'linear-gradient(135deg, #3b82f6, #8b5cf6)',
             }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.98 }}
           >
             View My Work
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5-5 5M6 12h12" />
             </svg>
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="#contact"
-            className="px-8 py-4 rounded-full font-semibold text-base text-slate-300 transition-all hover:text-white hover:border-blue-500/50"
+            className="px-8 py-4 rounded-full font-semibold text-base text-slate-300 transition-colors hover:text-white hover:border-blue-500/50"
             style={{
               border: '1px solid rgba(255,255,255,0.15)',
               background: 'rgba(255,255,255,0.04)',
             }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.98 }}
           >
             Get in Touch
-          </a>
+          </motion.a>
         </motion.div>
 
         {/* Stats row */}
-        <motion.div
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.65 }}
-        >
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
           {stats.map((stat, i) => (
-            <div
+            <motion.div
               key={i}
-              className="flex flex-col items-center py-4 px-3 rounded-2xl"
+              className="flex flex-col items-center py-4 px-3 rounded-2xl cursor-default"
               style={{
                 background: 'rgba(255,255,255,0.04)',
                 border: '1px solid rgba(255,255,255,0.08)',
               }}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 + i * 0.1 }}
+              whileHover={{ 
+                scale: 1.08, 
+                y: -5,
+                background: 'rgba(59,130,246,0.1)',
+                borderColor: 'rgba(59,130,246,0.3)'
+              }}
             >
               <span className="text-xl font-bold text-white">{stat.label}</span>
               <span className="text-xs text-slate-500 mt-1">{stat.sub}</span>
-            </div>
+            </motion.div>
           ))}
-        </motion.div>
+        </div>
 
         {/* Scroll hint */}
         <motion.div
           className="mt-16 flex flex-col items-center gap-2 text-slate-600"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1 }}
+          transition={{ duration: 0.6, delay: 1.2 }}
         >
           <span className="text-xs uppercase tracking-widest">Scroll to explore</span>
-          <div className="w-px h-8 bg-gradient-to-b from-slate-600 to-transparent" />
+          <motion.div 
+            className="w-px h-8 bg-gradient-to-b from-slate-600 to-transparent"
+            animate={{ y: [0, 5, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+          />
         </motion.div>
       </div>
     </section>
