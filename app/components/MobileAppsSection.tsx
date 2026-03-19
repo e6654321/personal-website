@@ -12,7 +12,7 @@ const apps = [
   {
     name: 'RentCircle',
     description: 'PH Landlord & Tenant Management',
-    screenshot: '/screenshots/rentcircle-placeholder.jpg',
+    screenshot: '/screenshots/rentcircle-screen.jpg',
   },
   {
     name: 'MCash Wallet',
@@ -27,7 +27,7 @@ const apps = [
   {
     name: 'PAO Connect',
     description: 'Philippine Academy of Ophthalmology',
-    screenshot: '/screenshots/paoconnect-placeholder.jpg',
+    screenshot: '/screenshots/paoconnect-screen.jpg',
   },
 ]
 
