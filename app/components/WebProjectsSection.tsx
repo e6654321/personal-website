@@ -39,6 +39,13 @@ const projects = [
     description: 'Enterprise sustainability tracking and reporting for MPIC subsidiaries',
     tags: ['React', 'TypeScript', 'Data Viz'],
   },
+  {
+    title: 'UNITS Property Management',
+    url: 'unitsapp.co',
+    screenshot: '/screenshots/units-placeholder.jpg',
+    description: 'Lead development · Property management SaaS platform',
+    tags: ['React', 'Python', 'Node.js', 'Redux'],
+  },
 ]
 
 export default function WebProjectsSection() {

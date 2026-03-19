@@ -10,6 +10,11 @@ const apps = [
     screenshot: '/screenshots/truest-screen.jpg',
   },
   {
+    name: 'RentCircle',
+    description: 'PH Landlord & Tenant Management',
+    screenshot: '/screenshots/rentcircle-placeholder.jpg',
+  },
+  {
     name: 'MCash Wallet',
     description: 'M Lhuillier Digital Wallet',
     screenshot: '/screenshots/mcash-screen.jpg',
@@ -18,6 +23,11 @@ const apps = [
     name: 'mWell Health ID',
     description: 'Digital Health Records · 24/7 Doctor Consult',
     screenshot: '/screenshots/mwell-screen.png',
+  },
+  {
+    name: 'PAO Connect',
+    description: 'Philippine Academy of Ophthalmology',
+    screenshot: '/screenshots/paoconnect-placeholder.jpg',
   },
 ]
 
@@ -39,7 +49,7 @@ export default function MobileAppsSection() {
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Mobile Applications</h2>
           <p className="text-[#94A3B8] text-lg max-w-2xl mx-auto">
-            Production apps · React Native · iOS & Android · 10k+ users
+            5 production apps · React Native · iOS & Android · 10k+ users
           </p>
         </div>
 
@@ -61,8 +71,8 @@ export default function MobileAppsSection() {
               >
                 <div className="drop-shadow-2xl hover:scale-105 transition-transform duration-300">
                   <Iphone15Pro
-                    width={280}
-                    height={572}
+                    width={220}
+                    height={449}
                     src={app.screenshot}
                     className="cursor-pointer"
                   />
