@@ -41,7 +41,7 @@ const projects = [
   {
     title: 'UNITS Property Management',
     url: 'unitsapp.co',
-    screenshot: '/screenshots/units-placeholder.jpg',
+    screenshot: '/screenshots/units-login.png',
     description: 'Lead development · Property management SaaS platform',
     tags: ['React', 'Python', 'Node.js', 'Redux'],
   },
