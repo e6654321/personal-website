@@ -34,6 +34,17 @@ const apps = [
 export default function MobileAppsSection() {
   return (
     <section id="mobile-apps" className="py-24 relative overflow-hidden">
+      {/* Hide scrollbar styles */}
+      <style jsx global>{`
+        .hide-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        .hide-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
+      
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -53,16 +64,16 @@ export default function MobileAppsSection() {
           </p>
         </div>
 
-        {/* Phone Frame Carousel */}
+        {/* Phone Frame Carousel - Hidden scrollbar */}
         <div
-          className="relative overflow-x-auto pb-8 -mx-6 px-6 md:mx-0 md:px-0"
+          className="relative overflow-x-auto pb-4 -mx-6 px-6 md:mx-0 md:px-0 hide-scrollbar"
           style={{
             scrollSnapType: 'x mandatory',
             scrollBehavior: 'smooth',
             WebkitOverflowScrolling: 'touch',
           }}
         >
-          <div className="flex gap-8 min-w-max justify-start md:justify-center px-4">
+          <div className="flex gap-6 md:gap-8 min-w-max justify-start md:justify-center px-4">
             {apps.map((app, index) => (
               <div
                 key={index}
@@ -71,16 +82,16 @@ export default function MobileAppsSection() {
               >
                 <div className="drop-shadow-2xl hover:scale-105 transition-transform duration-300">
                   <Iphone15Pro
-                    width={220}
-                    height={449}
+                    width={200}
+                    height={408}
                     src={app.screenshot}
                     className="cursor-pointer"
                   />
                 </div>
 
-                <div className="text-center mt-6">
-                  <p className="text-white font-semibold text-lg">{app.name}</p>
-                  <p className="text-white/60 text-sm mt-1">{app.description}</p>
+                <div className="text-center mt-5">
+                  <p className="text-white font-semibold text-base">{app.name}</p>
+                  <p className="text-white/60 text-xs mt-1 max-w-[180px]">{app.description}</p>
                 </div>
               </div>
             ))}
@@ -88,7 +99,7 @@ export default function MobileAppsSection() {
         </div>
 
         {/* Scroll indicator for mobile */}
-        <div className="text-center mt-4 md:hidden">
+        <div className="text-center mt-6 md:hidden">
           <p className="text-white/40 text-xs">← Swipe to see more →</p>
         </div>
 
