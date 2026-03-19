@@ -1,19 +1,20 @@
 'use client'
 
 import { Badge } from '@/components/ui/badge'
+import { Safari } from '@/components/ui/safari'
 
 const projects = [
   {
     title: 'TokenTable',
     url: 'tokentable.xyz',
-    screenshot: '/screenshots/tokentable-real.jpg',
+    screenshot: '/screenshots/tokentable-hero.jpg',
     description: 'Lead smart contract developer · Token vesting platform managing $50M+ in assets',
     tags: ['Solidity', 'React', 'Web3.js', 'TypeScript'],
   },
   {
     title: 'EthSign Platform',
     url: 'ethsign.xyz',
-    screenshot: '/screenshots/ethsign-real.jpg',
+    screenshot: '/screenshots/ethsign-hero.jpg',
     description: 'Web3 electronic signature platform · Blockchain transaction handling',
     tags: ['React', 'Web3.js', 'AWS', 'PDFTron'],
   },
@@ -63,33 +64,19 @@ export default function WebProjectsSection() {
           </p>
         </div>
 
-        {/* Website Screenshots Grid */}
+        {/* Safari browser frames - responsive grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {projects.map((project, index) => (
             <div
               key={index}
               className="group hover:scale-[1.02] transition-all duration-300"
             >
-              {/* Browser-style frame */}
-              <div className="rounded-xl overflow-hidden border border-white/10 bg-[#1a1a1a]">
-                {/* Browser header */}
-                <div className="flex items-center gap-2 px-4 py-3 bg-[#2a2a2a] border-b border-white/10">
-                  <div className="flex gap-1.5">
-                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                  </div>
-                  <div className="flex-1 mx-4">
-                    <div className="bg-[#1a1a1a] rounded-md px-3 py-1 text-xs text-white/50">
-                      {project.url}
-                    </div>
-                  </div>
-                </div>
-                {/* Screenshot */}
-                <img 
-                  src={project.screenshot} 
-                  alt={`${project.title} website`}
-                  className="w-full h-auto"
+              {/* Safari component from 21st.dev */}
+              <div className="relative">
+                <Safari
+                  url={project.url}
+                  src={project.screenshot}
+                  className="w-full h-auto drop-shadow-2xl"
                 />
               </div>
 
