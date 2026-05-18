@@ -6,20 +6,6 @@ import AnimateOnScroll from './AnimateOnScroll'
 
 const projects = [
   {
-    title: 'TokenTable',
-    url: 'tokentable.xyz',
-    screenshot: '/screenshots/tokentable-hero.jpg',
-    description: 'Lead smart contract developer · Token vesting platform managing $50M+ in assets',
-    tags: ['Solidity', 'React', 'Web3.js', 'TypeScript'],
-  },
-  {
-    title: 'EthSign Platform',
-    url: 'ethsign.xyz',
-    screenshot: '/screenshots/ethsign-hero.jpg',
-    description: 'Web3 electronic signature platform · Blockchain transaction handling',
-    tags: ['React', 'Web3.js', 'AWS', 'PDFTron'],
-  },
-  {
     title: 'M Lhuillier Website',
     url: 'mlhuillier.com',
     screenshot: '/screenshots/mlhuillier-real.jpg',
