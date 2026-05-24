@@ -48,7 +48,7 @@ export default function ContactSection() {
             Available for freelance projects and full-time opportunities
           </p>
           <p className="text-lg text-blue-400 mt-2">
-            2-4 weeks notice period
+            Available immediately
           </p>
         </AnimateOnScroll>
 

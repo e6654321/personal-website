@@ -13,6 +13,13 @@ const projects = [
     tags: ['11ty', 'jQuery', 'Contentful', 'Netlify'],
   },
   {
+    title: 'ML Shop E-commerce',
+    url: 'mlhuillier.com/shop',
+    screenshot: '/screenshots/mlhuillier-real.jpg',
+    description: 'M Lhuillier Jewelries e-commerce revamp · Cart system with financial precision',
+    tags: ['Next.js', 'TypeScript', 'E-commerce'],
+  },
+  {
     title: 'Watch My Back',
     url: 'watchmyback.org',
     screenshot: '/screenshots/watchmyback.png',

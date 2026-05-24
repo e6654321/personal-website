@@ -27,6 +27,11 @@ const apps = [
     screenshot: '/screenshots/mwell-screen.png',
   },
   {
+    name: 'Kindred',
+    description: 'AI Multi-Gen Storytelling · Voice Recording',
+    screenshot: '/screenshots/mob_truest.png',
+  },
+  {
     name: 'PAO Connect',
     description: 'Philippine Academy of Ophthalmology',
     screenshot: '/screenshots/paoconnect-screen.jpg',
