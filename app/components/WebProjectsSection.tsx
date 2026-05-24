@@ -54,7 +54,7 @@ export default function WebProjectsSection() {
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Full-Stack & Web Projects</h2>
           <p className="text-[#94A3B8] text-lg max-w-2xl mx-auto">
-            Blockchain · Enterprise · Fintech · Healthcare · Community Safety
+            Next.js frontends, NestJS APIs, microservices, and enterprise product delivery
           </p>
         </AnimateOnScroll>
 

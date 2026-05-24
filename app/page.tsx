@@ -33,15 +33,15 @@ export default function Home() {
               </div>
               <div className="flex flex-col">
                 <span className="text-white font-bold text-lg tracking-tight leading-tight">Elram Espra</span>
-                <span className="text-slate-500 text-xs font-medium">Full-Stack Developer</span>
+                <span className="text-slate-500 text-xs font-medium">Full-Stack & Mobile Engineer</span>
               </div>
             </a>
 
             {/* Desktop nav */}
             <div className="hidden md:flex items-center gap-8">
-              <a href="#blockchain" className="text-slate-400 hover:text-white transition-colors text-sm font-medium">Blockchain</a>
               <a href="#mobile-apps" className="text-slate-400 hover:text-white transition-colors text-sm font-medium">Mobile</a>
               <a href="#web-projects" className="text-slate-400 hover:text-white transition-colors text-sm font-medium">Web</a>
+              <a href="#blockchain" className="text-slate-400 hover:text-white transition-colors text-sm font-medium">Web3</a>
               <a href="#tech-stack" className="text-slate-400 hover:text-white transition-colors text-sm font-medium">Skills</a>
               <a
                 href="#contact"
@@ -74,9 +74,9 @@ export default function Home() {
           {/* Mobile menu */}
           {mobileMenuOpen && (
             <div className="md:hidden mt-4 pb-4 border-t pt-4 space-y-3" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
-              <a href="#blockchain" className="block text-slate-300 hover:text-white py-2" onClick={() => setMobileMenuOpen(false)}>Blockchain</a>
               <a href="#mobile-apps" className="block text-slate-300 hover:text-white py-2" onClick={() => setMobileMenuOpen(false)}>Mobile</a>
               <a href="#web-projects" className="block text-slate-300 hover:text-white py-2" onClick={() => setMobileMenuOpen(false)}>Web</a>
+              <a href="#blockchain" className="block text-slate-300 hover:text-white py-2" onClick={() => setMobileMenuOpen(false)}>Web3</a>
               <a href="#tech-stack" className="block text-slate-300 hover:text-white py-2" onClick={() => setMobileMenuOpen(false)}>Skills</a>
               <a href="#contact" className="block text-white font-medium py-2" onClick={() => setMobileMenuOpen(false)}>Contact Me</a>
             </div>
@@ -86,9 +86,9 @@ export default function Home() {
 
       {/* Sections */}
       <Hero />
-      <BlockchainSection />
       <MobileAppsSection />
       <WebProjectsSection />
+      <BlockchainSection />
       <TechStackSection />
       <ContactSection />
     </main>

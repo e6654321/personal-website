@@ -62,7 +62,7 @@ export default function MobileAppsSection() {
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Mobile Applications</h2>
           <p className="text-[#94A3B8] text-lg max-w-2xl mx-auto">
-            5 production apps · React Native · iOS & Android
+            Production React Native apps for fintech, healthcare, media, and consumer workflows
           </p>
         </AnimateOnScroll>
 

@@ -63,7 +63,7 @@ export default function BlockchainSection() {
           </Badge>
           <h2 className="mb-4">Blockchain Projects</h2>
           <p className="text-[#94A3B8] text-lg max-w-2xl mx-auto">
-            Building secure, scalable smart contracts and decentralized applications
+            Production smart contracts, wallet integrations, and ETHGlobal hackathon work
           </p>
         </AnimateOnScroll>
 

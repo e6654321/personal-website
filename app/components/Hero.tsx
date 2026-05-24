@@ -3,10 +3,10 @@
 import { motion } from 'framer-motion';
 
 const stats = [
-  { label: '5+ Years', sub: 'Experience' },
+  { label: '6+ Years', sub: 'Experience' },
   { label: '5 Apps', sub: 'React Native' },
-  { label: '3 Years', sub: 'Blockchain' },
-  { label: 'Full-Stack', sub: 'Development' },
+  { label: 'NestJS', sub: 'Microservices' },
+  { label: 'Fintech', sub: 'Healthcare' },
 ]
 
 export default function Hero() {
@@ -57,11 +57,11 @@ export default function Hero() {
           </h1>
           <h2 className="text-2xl md:text-4xl font-bold mb-8 leading-snug">
             <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Senior Full-Stack
+              Senior Full-Stack Engineer
             </span>
             {' & '}
             <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-              Blockchain Developer
+              React Native Specialist
             </span>
           </h2>
         </motion.div>
@@ -73,8 +73,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.35 }}
         >
-          Building scalable web platforms, shipping React Native apps to production,
-          and architecting blockchain smart contracts.
+          Building TypeScript platforms with Next.js and NestJS, shipping React Native
+          apps to iOS and Android, and delivering fintech and healthcare products.
         </motion.p>
 
         {/* CTA buttons */}
@@ -85,7 +85,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.5 }}
         >
           <motion.a
-            href="#blockchain"
+            href="#mobile-apps"
             className="px-8 py-4 rounded-full text-white font-semibold text-base flex items-center gap-2 transition-shadow hover:shadow-2xl hover:shadow-blue-500/30"
             style={{
               background: 'linear-gradient(135deg, #3b82f6, #8b5cf6)',

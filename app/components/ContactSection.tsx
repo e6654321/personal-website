@@ -100,9 +100,9 @@ export default function ContactSection() {
             <h3 className="text-3xl font-bold mb-4">
               Let&apos;s Build Something Amazing
             </h3>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Whether you need a full-stack developer, blockchain expert, or mobile app specialist, I&apos;m here to help bring your vision to life.
-            </p>
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+              Best fit: senior TypeScript, NestJS, Next.js, and React Native roles for remote-first teams building fintech, healthcare, or product platforms.
+          </p>
             <motion.a
               href="mailto:enespra@gmail.com"
               className="inline-block px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-colors text-lg"

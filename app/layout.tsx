@@ -2,9 +2,9 @@ import './globals.css'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Elram Espra - Full-Stack & Blockchain Developer',
-  description: 'Personal portfolio of Elram Espra, a senior full-stack and blockchain developer specializing in React Native, Solidity, and modern web technologies.',
-  keywords: 'developer, portfolio, react native, nextjs, node.js, blockchain, solidity, web3',
+  title: 'Elram Espra - Senior Full-Stack & React Native Engineer',
+  description: 'Personal portfolio of Elram Espra, a senior full-stack and React Native engineer specializing in TypeScript, NestJS, Next.js, fintech, healthcare, and production mobile apps.',
+  keywords: 'developer, portfolio, react native, nextjs, node.js, nestjs, typescript, mobile engineer, full-stack engineer',
 }
 
 export default function RootLayout({
@@ -20,4 +20,3 @@ export default function RootLayout({
     </html>
   )
 }
-

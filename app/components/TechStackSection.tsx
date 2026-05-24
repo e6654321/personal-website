@@ -6,24 +6,24 @@ import AnimateOnScroll from './AnimateOnScroll'
 
 export default function TechStackSection() {
   const techStack = {
-    'Blockchain & Web3': [
-      'TON FunC', 'Solidity', 'Web3.js', 'Ethers.js', 'Hardhat', 'Blueprint'
-    ],
     'Mobile Development': [
-      'React Native', 'iOS', 'Android', 'Firebase', 'Redux', 'Native Modules'
+      'React Native', 'TypeScript', 'iOS', 'Android', 'Firebase', 'Fastlane', 'Sentry'
     ],
     'Frontend': [
-      'React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Redux Toolkit'
+      'React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'MUI', 'TanStack Query'
     ],
     'Backend': [
-      'Node.js', 'NestJS', 'Python', 'RabbitMQ', 'REST APIs', 'GraphQL'
+      'Node.js', 'NestJS', 'TypeScript', 'Microservices', 'RabbitMQ', 'REST APIs', 'Swagger'
     ],
     'Database': [
-      'PostgreSQL', 'MongoDB', 'Redis', 'Firebase', 'Prisma'
+      'PostgreSQL', 'MongoDB', 'Redis', 'Firebase Firestore', 'TypeORM', 'Mongoose'
     ],
     'Cloud & DevOps': [
-      'AWS', 'GCP', 'Docker', 'Kubernetes', 'CI/CD', 'Vercel'
-    ]
+      'GCP', 'AWS', 'Docker', 'CI/CD', 'Firebase Distribution', 'Vercel'
+    ],
+    'Blockchain & Web3': [
+      'TON FunC', 'Solidity', 'Web3 React', 'Ethers.js', 'Taquito'
+    ],
   }
 
   return (
@@ -35,7 +35,7 @@ export default function TechStackSection() {
           </Badge>
           <h2 className="mb-4">Tech Stack</h2>
           <p className="text-[#94A3B8] text-lg max-w-2xl mx-auto">
-            Expertise across the full development stack
+            Focused on production TypeScript systems, mobile delivery, and pragmatic platform work
           </p>
         </AnimateOnScroll>
 
