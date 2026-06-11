@@ -57,11 +57,11 @@ export default function Hero() {
           </h1>
           <h2 className="text-2xl md:text-4xl font-bold mb-8 leading-snug">
             <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Senior Full-Stack Engineer
+              AI Platform Engineer
             </span>
             {' & '}
             <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-              React Native Specialist
+              Senior Full-Stack Developer
             </span>
           </h2>
         </motion.div>
@@ -73,8 +73,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.35 }}
         >
-          Building TypeScript platforms with Next.js and NestJS, shipping React Native
-          apps to iOS and Android, and delivering fintech and healthcare products.
+          Building AI-assisted TypeScript platforms with Next.js and NestJS, shipping
+          React Native apps, and delivering fintech and healthcare products.
         </motion.p>
 
         {/* CTA buttons */}

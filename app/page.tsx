@@ -33,7 +33,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col">
                 <span className="text-white font-bold text-lg tracking-tight leading-tight">Elram Espra</span>
-                <span className="text-slate-500 text-xs font-medium">Full-Stack & Mobile Engineer</span>
+                <span className="text-slate-500 text-xs font-medium">AI Platform Engineer</span>
               </div>
             </a>
 
