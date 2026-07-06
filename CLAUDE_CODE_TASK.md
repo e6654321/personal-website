@@ -187,4 +187,4 @@ Post in Discord thread if you need clarification on design or content decisions.
 **Start Date:** 2026-03-18
 **Target Completion:** Single focused session
 **Staging URL:** https://mockup-preview-ten.vercel.app
-**Production URL:** https://elram-portfolio.vercel.app
+**Production URL:** https://elram.dev

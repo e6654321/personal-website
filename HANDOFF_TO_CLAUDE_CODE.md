@@ -245,4 +245,4 @@ Target: Complete redesign in one focused session.
 
 **Created:** 2026-03-18
 **Staging URL:** https://mockup-preview-ten.vercel.app
-**Production URL:** https://elram-portfolio.vercel.app
+**Production URL:** https://elram.dev
