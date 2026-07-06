@@ -89,7 +89,7 @@ personal-website/
 - ✅ Home Automation Dashboard (React, WebSockets)
 
 **Professional Experience:**
-- ✅ Senior Full-Stack Developer at Symph (2019-Present, 5+ years)
+- ✅ Senior Full-Stack Developer at Symph (July 2020-Present, 6+ years)
 - ✅ 10,000+ daily users
 - ✅ Real-time features, performance optimization
 - ✅ TypeScript migration, API development
